@@ -1,0 +1,135 @@
+@font-face {
+    font-family: comfort;
+    src: url(./assets/fonts/Comfortaa/static/Comfortaa-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: comfort;
+}
+
+.nav button {
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(15, 14, 87)
+}
+
+.nav button:hover {
+    color: black;
+    background-color: white;
+}
+
+.nav {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(59, 53, 57);
+    min-height: 15vh;
+}
+
+.homepage {
+    background-image: url(back.jpg);
+    background-color: blueviolet;
+    background-size: cover;
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-div {
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    max-width: 400px;
+    width: 100%;
+    height: 400px;
+    background-image: url("me.JPG");
+
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    max-width: 600px;
+    width: 100%;
+    height: 500px;
+}
+
+h1 {
+    color: white;
+    font-family: ;
+}
+
+p {
+    text-indent: 50px;
+    color: white;
+}
+
+.about-text {
+    padding: 50px;
+}
+
+.nav-circle {
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+ 
+}
+
+.nav-circle div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightslategray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    max-width: 150px;
+    width: 100%;
+    height: 150px;
+    border-radius: 50%;
+    color: white;
+
+}
+
+@media screen and (max-width:1027px) {
+    .homepage {
+        flex-direction: column;
+    }
+
+    .nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-div {
+        width: 86%;
+        height: 265px;
+    }
+
+}
+
+@media screen and (max-width:450px) {
+
+    .nav-circle{
+
+        flex-direction: column;
+    
+    }
+   
+.about-text {
+   height: auto;
+}
+}
